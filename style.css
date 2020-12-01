@@ -1,0 +1,168 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: rgba(245, 247, 245, 0.89);
+}
+.heading-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2%;
+    color: goldenrod;
+    position: relative;
+}
+h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px;
+    position: relative;
+
+}
+.heading-name h2::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    right: 0;
+    height: 3px;
+    width: 100px;
+    background: goldenrod;
+}
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.main-container .imageInpBtn
+{
+    background: transparent;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: green;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 5px;
+    transition: all 0.5s ;
+    outline: none;
+   
+}
+.main-container #button
+{
+    background: transparent;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: green;
+    cursor: pointer;
+    margin: 5px 10%;
+    transition: all 0.5s;
+    outline: none;
+    
+}
+.main-container .name-file
+{
+    color: gray;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 50px;
+    padding-left: 10px;
+    margin-top: 5px;
+    width: 30%;
+}
+#canvas
+{
+    width: 65%;
+    height: 65%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    border-radius: 10px;
+    
+}
+.main-container .imageInpBtn:hover
+{
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    /* background-color: yellow; */
+}
+.main-container #button:hover
+{
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    /* background-color: yellow; */
+}
+
+@media only screen and (max-width:425px)
+{
+    .main-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container .name-file
+    {
+       width: 80%;
+       text-align: center;
+       margin-bottom: 0;
+       margin-left: 10%;
+       
+    }
+    #canvas
+    {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    }
+    .main-container .imageInpBtn
+    {
+        margin-left: 0%;
+    }
+    .main-container #button
+    {
+        margin: 0px;
+    }
+
+}
+@media only screen and (max-width:645px)
+{
+    #canvas
+    {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    }
+    .main-container .name-file
+    {
+       text-align: center;
+       margin-top: 20px;
+       margin-left: 10%;
+        width: 80%;
+    }
+    .main-container #button
+    {
+        margin-top: 5%;
+    }
+    .main-container .imageInpBtn
+    {
+        margin-left: 0%;
+    }
+}
